@@ -1,264 +1,59 @@
-/* Web Fonts -------------------- */
+/*
+Colors:
+Orange : #ff9700;
+Red :#cc6600;
+Green : #9b9900;
+Brown :#333300;
+Blue: #660066;
+;
 
-@font-face {
-  font-family: 'Abolition Regular';
-  src: url('../fonts/abolition-regular-webfont.eot');
-  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/abolition-regular-webfont.woff') format('woff'),
-       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
-}
+*/
 
-/* Base Styles -------------------- */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
+body 
+{
+  background: #ff9700; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff9700 , #cc6600); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff9700 , #cc6600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Droid Serif', serif;
   color: #878787;
   margin: 0;
-  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-p {
-  clear: both;
-}
-h1,
-h2,
-h3 {
-  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
-}
-
-h1 {  
-  font-size: 3rem; /* 90px/16px  */
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1.3; 
-  text-shadow: 0 1px 1px rgba(0,0,0,.8);
-  margin: 12px 0 0;
-}
-
-h2 {
-  font-size: 2em; /* 53px/16px  */
-  font-weight: normal;
-  line-height: 1.1;
-  margin: 0 0 .5em; /* 0 0 26px */
-  color: #48525c;
-}
-
-h3 {
-  display: block;
-  font-size: 1.25em; /* 20px/16px  */
-  color: #48525c;
-  line-height: 1.2;
-  margin-bottom: 1.7em; /* 34px */
-}
-
-h4 {
-  margin: 20px 0px;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-ul,
-ol {
-  margin: 30px 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/* Pseudo-classes ------------------ */
-
-a:link {
-  color: rgb(255, 169, 73);
-  text-decoration: none;
-}
-
-a:visited {
-  color: rgb(255, 169, 73);
-}
-
-a:hover {
-  color: rgba(255, 169, 73, .4);
-}
-
-a:active {
-  color: lightcoral;
-}
-
-/* Main Styles --------------------- */
-
-.main-header {
-  padding-top: 170px;
-  height: 60vh;
-  background: url('../img/portland.JPG') no-repeat center;
-  min-height: 50%;
-  background-size: cover;
-}
-
-/* Navigation Bar */
-
-.nav-section {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: linear-gradient(to bottom right, #333, transparent);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 52px;
-    z-index: 3;
-    
-}
-
-.nav-section li {
-    float: left;
-}
-
-.nav-section a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.nav-section a:hover {
-    background-color: #111;
-}
-
-/* Divs */
-
-.block-a,
-.block-b,
-.block-c {
-  display: inline-block;
-  width: 20%;
-  background-color: #e6f2ff;
-  border: double 3px #878787;
-  height: 400px;
-  position: relative;
-  padding-bottom: 50px !important;
-  margin: 75px 6.5%;
-}
-
-.block-a:hover,
-.block-b:hover,
-.block-c:hover {
-  background-color: #80bfff;
-  color: white;
-  }
-}
-
-.block-a {
-
-}
-
-.block-b {
-  
-}
-
-.block-c {
-
-}
-
-.sub-div {
-  border-radius: 100%;
-  background-color: #262626;
-  color: white;
-  height: 130px;
-  width: 130px !important;
-  position: relative;
-  padding-top: 20px !important;
-  top: -65px;
-}
-
-.contact-div-a {
-  display: inline-block;
-  width: 50%;
-  float: left;
-  height: 250px;
-}
-
-.contact-div-b {
-  display: block;
-  width: 30%;
-  margin: 0% 10%;
-  float: right;
-  background: url('../img/sart.jpg') no-repeat center;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: inset 0 0 1em #333, 0 0 1em transparent;
-}
-
-.rate-descriptions{
-  position: relative;
-  top: -50px;
-}
-
-.break-a {
-  display: block;
-  height: 20vh;
-  background: url('../img/sart.jpg') no-repeat top;
-  background-attachment: fixed;
-  min-height: 50%;
-  background-size: cover;
-}
-
-.break-b {
-  display: block;
-  height: 20vh;
-  background: url('../img/sart.jpg') no-repeat center;
-  background-attachment: fixed;
-  min-height: 50%;
-  background-size: cover;
-}
-/* Psudo Classes */
-.space {
-  margin-left: 10px;
-}
-
-.t-space {
-  margin-top: 25px !important;
-}
-
-.thumb {
-  width: 30px;
-  vertical-align: middle;
-}
-
-.center {
-  clear:both;
-  margin: auto;
-  width: 80%;
-  padding: 10px;
-}
-
-.center ul
+footer
 {
-  display: block;
-  padding: 0 20%;
-}
-
-.center h2
-{
+  font-family: 'Droid Serif', serif;
+  color: #660066;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
   text-align: center;
+  width:100%;
 }
 
-.center form
+footer li
 {
-  margin: 0 20% ;
+  display:inline-block;
+}
+
+.clear
+{
+  clear:both;
+}
+.company-name
+{
+  font-size: 80px;
+}
+
+.container
+{
+  color:#660066;
+  width:80%;
+  margin: 0 auto;
+  height:100%;
 }
 
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #660066; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -268,80 +63,78 @@ a:active {
     font-size: 16px;
 }
 
-.button:hover
+.schedule
 {
+  width:80%;
+  margin: 5px 0;
   cursor: pointer;
 }
 
+.left
+{
+  clear:both;
+  float: left;
+}
 
-.hidden
+.right
+{
+  float:right;
+}
+
+.logo
+{
+  width:40%;
+}
+
+.logo img
+{
+  max-width:100%;
+}
+
+.jumbotron
+{
+  width:60%;
+}
+.jumbotron h1
+{
+  font-size:90px;
+  margin-bottom:10px;
+}
+
+.jumbotron p
+{
+  margin: -20px 0 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.small
+{
+  font-size:10px;
+}
+
+.jumbotron li
+{
+  display:inline-block;
+  font-size: 15px;
+}
+
+.jumbotron ul
+{
+  margin-top: 0;
+  padding:0;
+}
+
+.appointments
 {
   display:none;
 }
 
-
-.no-padding {
-  padding: 0px !important;
+a
+{
+  text-decoration: none;
 }
-
-.b-border {
-  border-bottom: 2px solid #dfe2e6;
+section
+{
+  clear:both;
 }
-
-/* Media Queries */
-@media (max-width: 1044px) {
-  .primary-content {
-    width:90%;
-  }
-
-  .satisfaction::before {
-    height: 50px !important;
-    top: 10px !important;
-  }
-
-  .block-a,
-  .block-b,
-  .block-c {
-    width: 90%;
-    height: auto;
-  }  
-
-.contact-div-a {
-  display: block;
-  width: 100%;
-  height: auto;
-  float: none;
-}
-.contact-div-b {
-  display: block;
-  width: 80%;
-  margin: 0% 10%;
-  float: none;
-}
-
-.center {
-  width: 90%;
-}
-
-}
-
-@media (min-width: 1144px) {
-
-}
-
-@media (max-width: 768px) {
-
-}
-
-.satisfaction::before{
-  background-image: url('../img/satisfaction.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  padding-right: 100px !important;
-  height: 75px;
-  content: "";
-  position: relative;
-  top: 25px;
-}
-
